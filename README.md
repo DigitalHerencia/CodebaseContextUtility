@@ -1,29 +1,152 @@
-# Codebase Context Utility
+<!-- Codebase Context Utility -->
 
-A tool for generating LLM-ready context from your codebase. This utility helps you analyze, understand, and prepare your code for AI-assisted development.
+<p align="center">
+  <img src="public/placeholder-logo.svg" alt="Codebase Context Utility Logo" width="1920" />
+</p>
 
-## Features
+<h1 align="center">Codebase Context Utility 🧠✨</h1>
 
-- **File System Integration**: Open and explore local directories and files
-- **Drag-and-Drop Functionality**: Easily add files to the project
-- **Context Generation**: Create LLM-ready context from your codebase
-- **LLM Integration**: Send generated context to various LLM providers
-- **Code Analysis**: Syntax highlighting and structure analysis
-- **Export Options**: JSON, Markdown, or Plain Text formats
-- **Token Estimation**: Calculate token usage for different LLM models
+<p align="center">
+  <b>AI-Ready Context Generation for Your Codebase</b><br/>
+  <a href="#features">Features</a> • <a href="#tech-stack">Tech Stack</a> • <a href="#getting-started">Getting Started</a> • <a href="#usage">Usage</a>
+</p>
 
-## How Context Generation Works in the Codebase Context Utility
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-blue?logo=next.js" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-18-61dafb?logo=react" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License"/>
+</p>
 
-```mermaid
-Context Generation Process.download-icon {
-            cursor: pointer;
-            transform-origin: center;
-        }
-        .download-icon .arrow-part {
-            transition: transform 0.35s cubic-bezier(0.35, 0.2, 0.14, 0.95);
-             transform-origin: center;
-        }
-        button:has(.download-icon):hover .download-icon .arrow-part, button:has(.download-icon):focus-visible .download-icon .arrow-part {
-          transform: translateY(-1.5px);
-        }
-        #mermaid-diagram-rh05{font-family:var(--font-geist-sans);font-size:12px;fill:#000000;}#mermaid-diagram-rh05 .error-icon{fill:#552222;}#mermaid-diagram-rh05 .error-text{fill:#552222;stroke:#552222;}#mermaid-diagram-rh05 .edge-thickness-normal{stroke-width:1px;}#mermaid-diagram-rh05 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-diagram-rh05 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-diagram-rh05 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-diagram-rh05 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-diagram-rh05 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-diagram-rh05 .marker{fill:#666;stroke:#666;}#mermaid-diagram-rh05 .marker.cross{stroke:#666;}#mermaid-diagram-rh05 svg{font-family:var(--font-geist-sans);font-size:12px;}#mermaid-diagram-rh05 p{margin:0;}#mermaid-diagram-rh05 .label{font-family:var(--font-geist-sans);color:#000000;}#mermaid-diagram-rh05 .cluster-label text{fill:#333;}#mermaid-diagram-rh05 .cluster-label span{color:#333;}#mermaid-diagram-rh05 .cluster-label span p{background-color:transparent;}#mermaid-diagram-rh05 .label text,#mermaid-diagram-rh05 span{fill:#000000;color:#000000;}#mermaid-diagram-rh05 .node rect,#mermaid-diagram-rh05 .node circle,#mermaid-diagram-rh05 .node ellipse,#mermaid-diagram-rh05 .node polygon,#mermaid-diagram-rh05 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-diagram-rh05 .rough-node .label text,#mermaid-diagram-rh05 .node .label text{text-anchor:middle;}#mermaid-diagram-rh05 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-diagram-rh05 .node .label{text-align:center;}#mermaid-diagram-rh05 .node.clickable{cursor:pointer;}#mermaid-diagram-rh05 .arrowheadPath{fill:#333333;}#mermaid-diagram-rh05 .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-diagram-rh05 .flowchart-link{stroke:#666;fill:none;}#mermaid-diagram-rh05 .edgeLabel{background-color:white;text-align:center;}#mermaid-diagram-rh05 .edgeLabel p{background-color:white;}#mermaid-diagram-rh05 .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-diagram-rh05 .labelBkg{background-color:rgba(255, 255, 255, 0.5);}#mermaid-diagram-rh05 .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-diagram-rh05 .cluster text{fill:#333;}#mermaid-diagram-rh05 .cluster span{color:#333;}#mermaid-diagram-rh05 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:var(--font-geist-sans);font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-diagram-rh05 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-diagram-rh05 .flowchart-link{stroke:hsl(var(--gray-400));stroke-width:1px;}#mermaid-diagram-rh05 .marker,#mermaid-diagram-rh05 marker,#mermaid-diagram-rh05 marker *{fill:hsl(var(--gray-400))!important;stroke:hsl(var(--gray-400))!important;}#mermaid-diagram-rh05 .label,#mermaid-diagram-rh05 text,#mermaid-diagram-rh05 text>tspan{fill:hsl(var(--black))!important;color:hsl(var(--black))!important;}#mermaid-diagram-rh05 .background,#mermaid-diagram-rh05 rect.relationshipLabelBox{fill:hsl(var(--white))!important;}#mermaid-diagram-rh05 .entityBox,#mermaid-diagram-rh05 .attributeBoxEven{fill:hsl(var(--gray-150))!important;}#mermaid-diagram-rh05 .attributeBoxOdd{fill:hsl(var(--white))!important;}#mermaid-diagram-rh05 .label-container,#mermaid-diagram-rh05 rect.actor{fill:hsl(var(--white))!important;stroke:hsl(var(--gray-400))!important;}#mermaid-diagram-rh05 line{stroke:hsl(var(--gray-400))!important;}#mermaid-diagram-rh05 :root{--mermaid-font-family:var(--font-geist-sans);}Format &amp; ExportContext GenerationFile System ProcessingUser Loads FilesFile System ProcessingContext GenerationFormat &amp; ExportScan Directory StructureRead File ContentsFilter Files (Skip node_modules, .git,etc.)Process File MetadataMap Dependencies Between FilesGenerate Architecture OverviewApply User SettingsEstimate Token CountFormat as JSON/Markdown/PlainTextApply Token LimitsGenerate Final Context
+---
+
+> **Codebase Context Utility** is a modern tool for generating LLM-ready context from your codebase. 
+> Analyze, understand, and prepare your code for AI-assisted development with advanced file system 
+> integration and intelligent context generation. 🚀
+
+---
+
+## ✨ Features
+
+- **📁 File System Integration**: Open and explore local directories with native file system access
+- **🖱️ Drag-and-Drop Interface**: Effortlessly add files and folders to your project workspace
+- **🧠 Smart Context Generation**: Create LLM-optimized context from your entire codebase
+- **📊 Multiple Export Formats**: Generate context in JSON, Markdown, or Plain Text formats
+- **🔍 Code Analysis**: Advanced syntax highlighting and intelligent structure analysis
+- **📈 Token Estimation**: Calculate token usage for different LLM models and providers
+- **🎯 Dependency Mapping**: Automatically map relationships between files and modules
+- **⚡ Architecture Visualization**: Generate comprehensive codebase architecture overviews
+- **🔧 Advanced Filtering**: Include/exclude files with customizable patterns and extensions
+- **🌗 Modern UI**: Responsive design with dark/light mode and accessibility features
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 14 (App Router), React 18, TypeScript 5
+- **Styling:** Tailwind CSS, Radix UI Components, Lucide React Icons
+- **Code Analysis:** Babel Parser, AST Traversal, Language Detection
+- **File System:** File System Access API, Drag & Drop API
+- **State Management:** React Context, Custom Hooks
+- **UI Components:** Shadcn/ui, React Resizable Panels, React Hook Form
+- **Development:** ESLint, PostCSS, Autoprefixer
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+ or compatible package manager
+- Modern browser with File System Access API support
+
+### Quick Start
+
+```bash
+git clone https://github.com/DigitalHerencia/CodebaseContextUtility.git
+cd CodebaseContextUtility
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to start analyzing your codebase.
+
+### Development Commands
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linting
+npm run lint
+```
+
+---
+
+## 📖 Usage
+
+### 1. **Load Your Codebase**
+- Click "Open Directory" to select a local folder
+- Or drag and drop files/folders into the interface
+- Use the file tree to navigate your project structure
+
+### 2. **Configure Analysis**
+- Set file extension filters (js, ts, tsx, py, etc.)
+- Configure exclude patterns (node_modules, .git, dist)
+- Adjust token limits and export preferences
+
+### 3. **Generate Context**
+- Select your preferred output format (JSON/Markdown/Plain Text)
+- Click "Generate Context" to create LLM-ready analysis
+- Export or copy the generated context for use with AI tools
+
+### 4. **Advanced Features**
+- View dependency relationships between files
+- Generate architecture overviews
+- Estimate token counts for different LLM models
+- Filter and customize output based on your needs
+
+---
+
+## 🏗️ Architecture
+
+The utility processes your codebase through several intelligent stages:
+
+1. **File System Scanning**: Recursively analyzes directory structure
+2. **Content Processing**: Reads and parses file contents with language detection
+3. **Dependency Mapping**: Identifies imports, exports, and inter-file relationships
+4. **Metadata Extraction**: Gathers file statistics, sizes, and structural information
+5. **Context Assembly**: Combines all data into coherent, LLM-optimized format
+6. **Token Optimization**: Applies limits and formatting for target LLM models
+
+---
+
+## 🤝 Development Workflow
+
+- **Branch Names**: `feature/xyz`, `fix/abc`, `docs/xyz`
+- **Commit Format**: Conventional commits with clear, descriptive messages
+- **Code Quality**: ESLint for code standards, TypeScript for type safety
+- **UI Components**: Consistent usage of Shadcn/ui component library
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+
+---
+
+## 📝 License
+
+MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+<p align="center">
+  <b>Codebase Context Utility – Empowering AI-Assisted Development 🧠✨</b>
+</p>
+
+<!-- End of README -->

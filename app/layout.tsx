@@ -1,18 +1,15 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ToastProvider } from "@/components/toast-provider"
 import { FileSystemProvider } from "@/components/file-system-provider"
 import { Header } from "@/components/header"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Codebase Context Utility",
-  description: "A tool for generating LLM context from your codebase",
-    generator: 'v0.app'
+  description: "A modern tool for generating LLM-ready context from your codebase. Analyze, understand, and prepare your code for AI-assisted development.",
+  generator: 'Codebase Context Utility'
 }
 
 export default function RootLayout({
@@ -22,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className="font-sans">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <FileSystemProvider>
             <div className="flex min-h-screen flex-col">

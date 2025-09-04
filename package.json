@@ -1,6 +1,7 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "codebase-context-utility",
+  "version": "1.0.0",
+  "description": "A modern tool for generating LLM-ready context from your codebase. Analyze, understand, and prepare your code for AI-assisted development with advanced file system integration and intelligent context generation.",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -52,6 +53,7 @@
     "lucide-react": "^0.454.0",
     "next": "14.2.16",
     "next-themes": "latest",
+    "postcss-nesting": "^13.0.2",
     "react": "^18",
     "react-day-picker": "9.8.0",
     "react-dom": "^18",
@@ -66,6 +68,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
