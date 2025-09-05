@@ -1,66 +1,66 @@
 <!-- Codebase Context Utility -->
 
-<p align="center">
-  <img src="public/placeholder-logo.svg" alt="Codebase Context Utility Logo" width="1920" />
-</p>
-
 <h1 align="center">Codebase Context Utility 🧠✨</h1>
 
 <p align="center">
   <b>AI-Ready Context Generation for Your Codebase</b><br/>
-  <a href="#features">Features</a> • <a href="#tech-stack">Tech Stack</a> • <a href="#getting-started">Getting Started</a> • <a href="#usage">Usage</a>
+  <a href="#-features">Features</a> • <a href="#-tech">Tech Stack</a> • <a href="#-getting-started">Getting Started</a> • <a href="#-usage">Usage</a> • <a href="#-architecture">Architecture</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-14-blue?logo=next.js" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/React-18-61dafb?logo=react" alt="React"/>
-  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License"/>
 </p>
 
 ---
 
-> **Codebase Context Utility** is a modern tool for generating LLM-ready context from your codebase. 
-> Analyze, understand, and prepare your code for AI-assisted development with advanced file system 
-> integration and intelligent context generation. 🚀
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DigitalHerencia/CodebaseContextUtility/refs/heads/main/public/Screenshot_4-9-2025_162543_codebase-context-utility.vercel.app.jpeg" alt="CodebaseContextUtility Screenshot" width="100%" style="border-radius:12px;margin:1rem 0;">
+</p>
+
+---
+
+> **Codebase Context Utility** is a developer-first tool that transforms entire codebases into **LLM-ready context** for AI-assisted workflows.  
+> It provides deep file system integration, dependency mapping, and token-aware exports to make working with large projects seamless. 🚀
 
 ---
 
 ## ✨ Features
 
-- **📁 File System Integration**: Open and explore local directories with native file system access
-- **🖱️ Drag-and-Drop Interface**: Effortlessly add files and folders to your project workspace
-- **🧠 Smart Context Generation**: Create LLM-optimized context from your entire codebase
-- **📊 Multiple Export Formats**: Generate context in JSON, Markdown, or Plain Text formats
-- **🔍 Code Analysis**: Advanced syntax highlighting and intelligent structure analysis
-- **📈 Token Estimation**: Calculate token usage for different LLM models and providers
-- **🎯 Dependency Mapping**: Automatically map relationships between files and modules
-- **⚡ Architecture Visualization**: Generate comprehensive codebase architecture overviews
-- **🔧 Advanced Filtering**: Include/exclude files with customizable patterns and extensions
-- **🌗 Modern UI**: Responsive design with dark/light mode and accessibility features
+- **📁 File System Integration:** Select folders locally with native FS access  
+- **🖱️ Drag-and-Drop Interface:** Quickly add files and folders to your workspace  
+- **🧠 Smart Context Generation:** Create optimized context chunks for GPT and other LLMs  
+- **📊 Multiple Export Formats:** JSON, Markdown, Plaintext output options  
+- **🔍 Code Analysis:** AST parsing, language detection, syntax-aware insights  
+- **📈 Token Estimation:** Calculate token usage per model/provider  
+- **🎯 Dependency Mapping:** Visualize relationships between files and modules  
+- **⚡ Architecture Visualization:** Generate project-wide architecture diagrams  
+- **🔧 Advanced Filtering:** Include/exclude via glob patterns, extensions  
+- **🌗 Modern UI:** Responsive design, dark/light themes, keyboard shortcuts  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js 14 (App Router), React 18, TypeScript 5
-- **Styling:** Tailwind CSS, Radix UI Components, Lucide React Icons
-- **Code Analysis:** Babel Parser, AST Traversal, Language Detection
-- **File System:** File System Access API, Drag & Drop API
-- **State Management:** React Context, Custom Hooks
-- **UI Components:** Shadcn/ui, React Resizable Panels, React Hook Form
-- **Development:** ESLint, PostCSS, Autoprefixer
+- **Frontend:** Next.js 15 (App Router), React 19, TypeScript 5  
+- **Styling:** Tailwind CSS v4, Radix UI, Shadcn/ui, Lucide React Icons  
+- **Code Analysis:** Babel Parser, AST Traversal, custom token estimator  
+- **File System:** File System Access API, Drag & Drop API  
+- **State Management:** React Context + Custom Hooks  
+- **Utilities:** React Resizable Panels, React Hook Form, clsx  
+- **DX:** ESLint, PostCSS, Autoprefixer, pnpm/npm  
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-- Node.js 18+
-- npm 9+ or compatible package manager
-- Modern browser with File System Access API support
+- **Node.js:** 18+  
+- **Package Manager:** npm 9+ / pnpm  
+- **Browser:** Chrome/Edge/Brave with File System Access API  
 
 ### Quick Start
 
